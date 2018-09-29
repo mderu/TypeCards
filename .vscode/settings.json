@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/*.git": true,
+        "**/*.gitattributes": true,
+        "**/*.js": { "when": "$(basename).ts"},
+        // basename only removes the first extension. In this case,
+        // basename == "<name>.js"
+        "**/*.js.map": { "when": "$(basename)"}
+    }
+}

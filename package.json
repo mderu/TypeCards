@@ -1,0 +1,29 @@
+{
+  "name": "type_cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "systemjs": "^0.21.5",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.3",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d --content-base ./public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0"
+}

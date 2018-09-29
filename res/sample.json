@@ -1,0 +1,83 @@
+﻿{
+    "cards": {
+        "一": [
+            {
+                "Kanji": "一",
+                "Hirigana": "いち",
+                "English": "One"
+            }
+        ],
+        "二": [
+            {
+                "Kanji": "二",
+                "Hirigana": "に",
+                "English": "Two"
+            }
+        ],
+        "三": [
+            {
+                "Kanji": "三",
+                "Hirigana": "さん",
+                "English": "Three"
+            }
+        ],
+        "四": [
+            {
+                "Kanji": "四",
+                "Hirigana": "よん",
+                "English": "Four"
+            }
+        ],
+        "五": [
+            {
+                "Kanji": "五",
+                "Hirigana": "ご",
+                "English": "Five"
+            }
+        ],
+        "六": [
+            {
+                "Kanji": "九",
+                "Hirigana": "ろく",
+                "English": "Six"
+            }
+        ],
+        "七": [
+            {
+                "Kanji": "七",
+                "Hirigana": "なな",
+                "English": "Seven"
+            }
+        ],
+        "八": [
+            {
+                "Kanji": "八",
+                "Hirigana": "はち",
+                "English": "Eight"
+            }
+        ],
+        "九": [
+            {
+                "Kanji": "九",
+                "Hirigana": "きゅう",
+                "English": "Nine"
+            }
+        ],
+        "十": [
+            {
+                "Kanji": "十",
+                "Hirigana": "じゅう",
+                "English": "Ten"
+            }
+        ]
+    },
+    "decks": {
+        "Japanese": {
+            "subdecks": {
+                "Numbers": {
+                    "cards": [ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" ]
+                }
+            }
+        }
+    }
+}
