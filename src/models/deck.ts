@@ -6,13 +6,24 @@ import {Card} from "./card";
  * of itself, and cycles may not occur.
  */
 export class Deck {
-	subdecks: Deck[];
 	cards: Card[];
 	name: string;
+	disabledCards: Card[] = [];
+	metadata: any = {};
 
-    constructor(name: string, cards: Card[], subdecks: Deck[] = []) {
+    constructor(name: string, cards: Card[]) {
 		this.name = name;
         this.cards = cards;
-        this.subdecks = subdecks;
+	}
+}
+
+export class DeckGroup {
+	name: string;
+	decks: [DeckGroup | Deck];
+	_metadata: {[id: string]: any} = {};
+
+	constructor(name: string, decks: [DeckGroup | Deck]) {
+		this.name = name;
+		this.decks = decks;
 	}
 }
