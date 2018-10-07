@@ -2,7 +2,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.ts',
+  entry: './src/app.tsx',
   plugins: [
     new CleanWebpackPlugin(['public/build']),
     new HtmlWebpackPlugin({
@@ -18,7 +18,8 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: 'ts-loader' }
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      { test: /\.css?$/, use: ["style-loader", "css-loader"] }
     ]
   }
 }

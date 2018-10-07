@@ -47,7 +47,7 @@ export class DeckManager {
                     deckCards.push(allCards[key]);
                 }
             }
-            decks.push(new Deck(deckName, deckCards, subdecks));
+            decks.push(new Deck(deckName, deckCards));
         }
         return decks;
     }

@@ -1,25 +1,17 @@
-import { DeckManager } from './controllers/deckManager';
+import { DeckManager } from 'controllers/deckManager';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import '../css/app.css'
 
-console.log('test')
-
-window.onload = () => {
-    var el = document.getElementById('content');
-    var files = document.getElementById('files');
-    if (files != null) {
-        files.addEventListener('change', handleFileSelect, false);
+export default class App extends Component {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            file_data: null
+        };
     }
 
-    console.log('test')
-
-    var json_str = localStorage.getItem('config');
-    if (json_str != null) {
-        let config = json_str;
-        console.log(json_str);
-        let deckMan = DeckManager.load(config);
-        console.log(deckMan);
-    }
-
-    function handleFileSelect(evt: any) {
+    handleFileSelect(evt: any) {
         var files = evt.target.files; // FileList object
 
         // files is a FileList of File objects. List some properties.
@@ -48,4 +40,13 @@ window.onload = () => {
             reader.readAsText(f);
         }
     }
-};
+
+    render() {
+        return (
+            <div>
+                <input type="file" onChange={this.handleFileSelect} />
+            </div>
+        );
+    }
+}
+render(<App />, document.getElementById('root'));
