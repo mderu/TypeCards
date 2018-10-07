@@ -1,9 +1,7 @@
 import {Card} from "./card";
 
 /** 
- * The Deck class is a model that holds multiple cards within a list. Decks 
- * can contain a structured hierarchy of subdecks. A deck cannot be a subdeck
- * of itself, and cycles may not occur.
+ * The Deck class is a model that holds multiple cards within a list.
  */
 export class Deck {
 	cards: Card[];

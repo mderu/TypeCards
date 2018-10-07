@@ -31,12 +31,6 @@ export class DeckManager {
         var decks: Deck[] = [];
         for (let deckName in deckDataDict) {
             let deckData = deckDataDict[deckName];
-            let subdecks: Deck[] = [];
-            if ('subdecks' in deckData) {
-                subdecks = this.buildDecksFromJson(
-                    deckData['subdecks'],
-                    allCards);
-            }
             var deckCards: Card[] = [];
             if ('cards' in deckData) {
                 console.log(deckData['cards']);
