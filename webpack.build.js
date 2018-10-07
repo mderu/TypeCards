@@ -2,6 +2,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  devtool: 'inline-source-map',
   entry: './src/app.tsx',
   plugins: [
     new CleanWebpackPlugin(['public/build']),
